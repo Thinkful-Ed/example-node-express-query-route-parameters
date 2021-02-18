@@ -25,8 +25,8 @@ const saySomething = (req, res, next) => {
 };
 
 // Routes
-app.use("/hello", sayHello);
-app.use("/say/goodbye", sayGoodbye);
-app.use("/say/:greeting", saySomething);
+app.get("/hello", sayHello);
+app.get("/say/goodbye", sayGoodbye);
+app.get("/say/:greeting", saySomething);
 
 module.exports = app;
